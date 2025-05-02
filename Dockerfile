@@ -14,4 +14,4 @@ RUN ./mvnw clean package -DskipTests -B
 
 EXPOSE 8081
 
-CMD ["java","-Dserver.port=${PORT}","-jar","target/task-manager-backend.jar"]
+CMD ["java","-Dserver.port=${PORT}","-jar","target/*.jar"]
