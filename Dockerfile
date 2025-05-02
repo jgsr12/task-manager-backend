@@ -14,4 +14,5 @@ RUN ./mvnw clean package -DskipTests -B
 
 EXPOSE 8081
 
-CMD ["java","-Dserver.port=${PORT}","-jar","target/*.jar"]
+CMD ["sh", "-c", "java -Dserver.port=${PORT} -jar target/*.jar"]
+
